@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+     <!-- main css -->
+     <link rel="stylesheet" href="style.css">
+     <!-- bootstrap css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+
+   <!-- main section -->
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+              <div class="img col-5">
+                 <!-- mac image -->
+                 <img src="images/mac.png" alt="">
+              </div>
+              <div class="col-5">
+                <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptate placeat deleniti mollitia, delectus doloremque soluta aperiam maxime quis magnam nesciunt, quia et! Ad eius eveniet, quia dignissimos fugiat perspiciatis.</p>
+                 <!-- memory part -->
+                <div class="memory">
+                  <h3>Menory</h3>
+                  <button id="baseMamory" type="button" class="btn btn-light">8GB unified memory</button>
+                  <button id="extraMemory" type="button" class="btn btn-light">16GB unified memory</button>
+                </div>
+
+                <!-- storage part -->
+
+                <div class="memory">
+                  <h3>Storage</h3>
+                  <button id="baseStorage" type="button" class="btn btn-light">256GB SSD storage</button>
+                  <button id="secondStorage" type="button" class="btn btn-light">512GB SSD storage</button>
+                  <button id="highestStorage" type="button" class="btn btn-light">1TB SSD storage</button>
+                </div>
+
+                <!-- delivery option -->
+                <h3>Choose your delivery option</h3>
+                <div class="memory d-flex gap-2">
+                  <button id="freeShpping" type="button" class="btn btn-light">Friday,Aug 25 FREE prime DElivery</button>
+                  <button id="shippingCost" type="button" class="btn btn-light">Friday,Aug 21 DElivery charge $20</button>
+                </div>
+                    <!-- calculation section -->
+                <div>
+                   <ul class="list-group mt-5">
+                      <li class="list-group-item d-flex ">Best Prce $<span id="best-price"> 1299</span></li>
+                      <li class="list-group-item d-flex ">Extra Memory Cost $<span id="memoryCost"  >0</span></li>
+                      <li class="list-group-item d-flex ">Extra Storage Cost $<span id="storageCost">0</span></li>
+                      <li class="list-group-item d-flex ">Delivery Charge $<span id="delevierChrrge">0</span></li>
+                      <li class="list-group-item d-flex ">Total price $<span id="totalPrice">1299</span></li>
+                  </ul>
+
+
+                   <!-- input field -->
+                   <h4>Add pomo code</h4>
+                    <div class="d-flex justify-content-center gap-5">
+                      <input id="pomoCode" type="text" class="form-control" placeholder="Apply pomo code" aria-label="Username">
+                      <button id="apply" type="button" class="btn btn-danger">Apply</button>
+                    </div>
+
+                   
+                </div>
+
+              </div>
+            </div>
+            <!-- grand total part -->
+            <h2 class="grand-total">Total $<span id="grand-total" >1299</span></h2>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
