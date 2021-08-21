@@ -1,5 +1,3 @@
-
-
 //base memory
 document.getElementById('baseMamory').addEventListener('click',function(){
     
@@ -10,8 +8,7 @@ document.getElementById('baseMamory').addEventListener('click',function(){
     extraPrice= price;
     document.getElementById('memoryCost').innerText=extraPrice;
 
-    totalCost()
-     
+    totalCost()    
 })
 
 //extra memory
@@ -102,7 +99,8 @@ document.getElementById('shippingCost').addEventListener('click',function(){
 })
 
 
-//totalPrice
+//totalPrice using function
+
 function totalCost(){
     let basePrice=1299;
     let  MemoryCost=document.getElementById('memoryCost')
@@ -115,12 +113,8 @@ function totalCost(){
    
    //grand-total
     document.getElementById('grand-total').innerText=total;
-     
-
 }
-
-
-   //pomo code
+   //pomo code using function
       
      function pomocodecal(){
          let totalCost=document.getElementById('totalPrice')

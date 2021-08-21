@@ -32,7 +32,7 @@
 
                 <!-- storage part -->
 
-                <div class="memory">
+                <div class="memory mt-5">
                   <h3>Storage</h3>
                   <button id="baseStorage" type="button" class="btn btn-light">256GB SSD storage</button>
                   <button id="secondStorage" type="button" class="btn btn-light">512GB SSD storage</button>
@@ -40,29 +40,55 @@
                 </div>
 
                 <!-- delivery option -->
-                <h3>Choose your delivery option</h3>
-                <div class="memory d-flex gap-2">
-                  <button id="freeShpping" type="button" class="btn btn-light">Friday,Aug 25 FREE prime DElivery</button>
-                  <button id="shippingCost" type="button" class="btn btn-light">Friday,Aug 21 DElivery charge $20</button>
+                <div class="mt-5">
+                  <h3>Choose your delivery option</h3>
+                  <div class="memory d-flex gap-2">
+                    <button id="freeShpping" type="button" class="btn btn-light">Friday,Aug 25 FREE prime DElivery</button>
+                    <button id="shippingCost" type="button" class="btn btn-light">Friday,Aug 21 DElivery charge $20</button>
+                  </div>
+
                 </div>
+
                     <!-- calculation section -->
                 <div>
-                   <ul class="list-group mt-5">
-                      <li class="list-group-item d-flex ">Best Prce $<span id="best-price"> 1299</span></li>
-                      <li class="list-group-item d-flex ">Extra Memory Cost $<span id="memoryCost"  >0</span></li>
-                      <li class="list-group-item d-flex ">Extra Storage Cost $<span id="storageCost">0</span></li>
-                      <li class="list-group-item d-flex ">Delivery Charge $<span id="delevierChrrge">0</span></li>
-                      <li class="list-group-item d-flex ">Total price $<span id="totalPrice">1299</span></li>
+                  <ul class="list-group mt-5">
+                    <li class="list-group-item d-flex justify-content-between align-items-end">
+                      Best price
+                     <div>
+                      <span>$</span> <span id="best-price">1299</span>
+                     </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Extra Memory Cost
+                      <div>
+                        <span>$</span> <span id="memoryCost">0</span>
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Extra Storage Cost
+                      <div>
+                        <span>$</span> <span id="storageCost" >0</span>
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Delivery Charge
+                      <div>
+                        <span>$</span> <span id="delevierChrrge">0</span>
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Total price
+                      <div>
+                        <span>$</span> <span id="totalPrice" >1299</span>
+                      </div>
+                    </li>
                   </ul>
-
-
-                   <!-- input field -->
+                 <!-- input field -->
                    <h4>Add pomo code</h4>
                     <div class="d-flex justify-content-center gap-5">
                       <input id="pomoCode" type="text" class="form-control" placeholder="Apply pomo code" aria-label="Username">
                       <button id="apply" type="button" class="btn btn-danger">Apply</button>
                     </div>
-
                    
                 </div>
 
